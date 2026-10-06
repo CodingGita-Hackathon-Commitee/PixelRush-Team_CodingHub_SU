@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Relay Tracking — Donor Dispatched</title>
+  <link rel="stylesheet" href="08.LiveTracker_style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="header-left">
+      <a href="#" class="back-btn">←</a>
+      <h1 class="page-title">Live Relay Tracking</h1>
+    </div>
+    <div class="header-right">
+      <div class="location-pill">📍 Ahmedabad</div>
+      <div class="user-avatar">👤</div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Top Status ETA Card -->
+    <div class="card status-card">
+      <div class="status-header-row">
+        <div class="dispatched-badge">
+          <span class="status-dot"></span>
+          DONOR DISPATCHED • IN-TRANSIT
+        </div>
+        <div class="blood-units-box">
+          <div class="blood-type">B-</div>
+          <div class="units-text">2 UNITS</div>
+        </div>
+      </div>
+
+      <h2 class="hero-donor-title">Aarav Sharma is on the way</h2>
+      <p class="eta-text">
+        Estimated arrival: <strong>12 mins</strong> at Emergency Desk
+      </p>
+
+      <!-- Destination Sub-Bar -->
+      <div class="destination-strip">
+        <div class="destination-info">
+          <div class="hospital-icon-box">✚</div>
+          <div>
+            <div class="dest-label">Destination</div>
+            <div class="hospital-name">PSM Hospital</div>
+            <div class="hospital-location">Kalol,Ghandhi Nagar (380054)</div>
+          </div>
+        </div>
+        <div class="timer-pill">
+          <span>⏱</span> 1h 24m left
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Request Relay Progress Steps -->
+    <div class="card">
+      <div class="timeline-title-row">
+        <h3 class="timeline-heading">Live Request Relay</h3>
+        <span class="step-count">Step 4 of 5</span>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Step 1 -->
+        <div class="timeline-item completed">
+          <div class="timeline-node done">✓</div>
+          <div class="timeline-content">
+            <div>
+              <div class="step-main-title">Request sent</div>
+              <div class="step-desc">Verified by Emergency Triage • 14:02</div>
+            </div>
+            <span class="step-status-tag">Done</span>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-item completed">
+          <div class="timeline-node done">✓</div>
+          <div class="timeline-content">
+            <div>
+              <div class="step-main-title">Donors notified</div>
+              <div class="step-desc">14 registered B- donors in 4 km radius</div>
+            </div>
+            <span class="step-status-tag">14:04</span>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-item completed">
+          <div class="timeline-node done">✓</div>
+          <div class="timeline-content">
+            <div>
+              <div class="step-main-title">Donor confirmed</div>
+              <div class="step-desc">Aarav confirmed readiness & health check</div>
+            </div>
+            <span class="step-status-tag">14:09</span>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-item">
+          <div class="timeline-node active">🏃</div>
+          <div class="timeline-content">
+            <div>
+              <div class="step-main-title">
+                On the way to hospital <span class="eta-badge-green">12 min ETA</span>
+              </div>
+              <div class="step-desc">Crossing Drive-In Road Junction</div>
+            </div>
+            <span class="step-status-tag live">LIVE</span>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-item">
+          <div class="timeline-node pending">🤝</div>
+          <div class="timeline-content">
+            <div>
+              <div class="step-main-title" style="color: #9CA3AF;">Fulfilled & safe transfer</div>
+              <div class="step-desc">Hospital verification & cross-match</div>
+            </div>
+            <span class="step-status-tag pending-text">Pending</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Confirmed Responder Details -->
+    <div class="card">
+      <div class="responder-card-header">
+        <span class="responder-label">CONFIRMED RESPONDER</span>
+        <span class="verified-id-pill">✓ Government ID Verified</span>
+      </div>
+
+      <div class="responder-profile">
+        <div class="profile-avatar-container">
+          <div class="profile-avatar">👨‍💼</div>
+          <div class="shield-badge">🛡</div>
+        </div>
+        <div class="profile-details">
+          <div class="profile-name-group">
+            <h4 class="responder-name">Aarav Sharma</h4>
+            <span class="gold-donor-badge">Gold Donor</span>
+          </div>
+          <div class="donations-count">8 previous successful donations</div>
+          <div class="tags-row">
+            <span class="blood-type-tag">B- Negative</span>
+            <span class="last-donated-text">Last donated: 5 months ago</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons Grid -->
+      <div class="action-grid">
+        <button class="call-btn">
+          <span><svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.11596 12.7268L8.15456 9.08666C8.46255 8.69067 8.61655 8.49267 8.69726 8.27061C8.76867 8.07411 8.79821 7.86486 8.784 7.65628C8.76793 7.42055 8.67477 7.18766 8.48846 6.72187L7.77776 4.94513C7.50204 4.25581 7.36417 3.91116 7.12635 3.68525C6.91678 3.48618 6.65417 3.3519 6.37009 3.29856C6.0477 3.23803 5.68758 3.32806 4.96733 3.50812L3 4.00002C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3122 20.7617 17.952 20.7012 17.6297C20.6478 17.3456 20.5136 17.083 20.3145 16.8734C20.0886 16.6356 19.7439 16.4977 19.0546 16.222L17.4691 15.5878C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4002C15.4877 15.512 15.2854 15.7144 14.8807 16.1191L11.7943 19.1569" stroke="#95F8A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></span> CALL DONOR
+        </button>
+        <button class="backup-btn">
+          <span><svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 14.4999V8.49987M9 11.4999H15M20 11.9999C20 16.9083 14.646 20.4783 12.698 21.6147C12.4766 21.7439 12.3659 21.8085 12.2097 21.842C12.0884 21.868 11.9116 21.868 11.7903 21.842C11.6341 21.8085 11.5234 21.7439 11.302 21.6147C9.35396 20.4783 4 16.9083 4 11.9999V7.21747C4 6.41796 4 6.0182 4.13076 5.67457C4.24627 5.37101 4.43398 5.10015 4.67766 4.8854C4.9535 4.64231 5.3278 4.50195 6.0764 4.22122L11.4382 2.21054C11.6461 2.13258 11.75 2.0936 11.857 2.07815C11.9518 2.06444 12.0482 2.06444 12.143 2.07815C12.25 2.0936 12.3539 2.13258 12.5618 2.21054L17.9236 4.22122C18.6722 4.50195 19.0465 4.64231 19.3223 4.8854C19.566 5.10015 19.7537 5.37101 19.8692 5.67457C20 6.0182 20 6.41796 20 7.21747V11.9999Z" stroke="#93000b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></span> BACKUP DONOR
+        </button>
+      </div>
+
+      <!-- Token & Cancellation -->
+      <div class="token-row">
+        <span class="token-text">Emergency dispatch token: #BR-8821</span>
+        <a href="#" class="cancel-link">Cancel request</a>
+      </div>
+    </div>
+
+    <!-- Bottom Monitoring Note -->
+    <div class="footer-red-cross">
+      <span class="red-cross-icon">
+        <svg fill="#005223" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 910.288 910.287" xml:space="preserve" stroke="#005223"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M873.206,202.06l-1.212-28.51l-28.386-2.915c-109.036-11.198-202.773-51.887-262.21-84.049 c-65.099-35.226-104.56-68.274-104.922-68.579L455.165,0L433.84,17.981c-0.392,0.33-39.853,33.379-104.951,68.604 c-59.437,32.162-153.173,72.851-262.209,84.049l-28.387,2.915l-1.212,28.51c-0.217,5.104-4.777,126.698,42.059,273.937 c27.637,86.887,67.549,164.736,118.627,231.396c64.139,83.701,145.948,149.68,243.155,196.102l14.221,6.793l14.221-6.793 c97.207-46.422,179.017-112.398,243.155-196.102c51.079-66.658,90.991-144.51,118.628-231.395 C877.982,328.759,873.423,207.165,873.206,202.06z M455.143,836.93c-81.095-41.209-149.731-97.887-204.194-168.646 c-46.393-60.275-82.812-130.998-108.248-210.201c-31.088-96.808-38.06-183.144-39.471-225.538 c43.735-6.494,87.949-17.421,131.833-32.597c42.9-14.836,85.598-33.752,126.907-56.221c41.915-22.798,73.81-44.573,93.172-58.812 c19.362,14.238,51.258,36.014,93.173,58.812c41.309,22.47,84.007,41.385,126.907,56.221 c43.896,15.181,88.123,26.108,131.87,32.602c-1.359,41.978-8.194,127.098-38.842,223.443 c-25.317,79.594-61.694,150.672-108.12,211.258C605.537,738.494,536.632,795.52,455.143,836.93z"></path> <polygon points="635.013,305.016 588.969,351.06 417.368,522.662 330.399,435.693 318.573,423.867 295.239,447.201 295.239,447.202 271.904,470.537 417.368,616 681.682,351.686 "></polygon> </g> </g> </g></svg>
+      </span>
+      <span>Blood Relay coordination is monitored by Gujarat State Red Cross Emergency Desk 24x7.</span>
+    </div>
+
+  </main>
+
+</body>
+</html>

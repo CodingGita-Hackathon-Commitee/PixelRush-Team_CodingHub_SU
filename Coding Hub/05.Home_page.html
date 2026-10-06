@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOD RELAY - Home</title>
+    <!-- Font Awesome Icons for design elements -->
+    <link rel="stylesheet" href="05.Home_style.css">
+    <!-- Google Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Top Fixed Header -->
+    <header class="header">
+        <div class="header-left">
+            <a href="#" class="back-icon" aria-label="Go Back">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="brand-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <span class="brand-title">BLOOD RELAY</span>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <a href="tel:911" class="dispatch-pill">
+                <span class="status-dot"></span>
+                <i class="fa-solid fa-phone" style="font-size: 10px;"></i>
+                <span>911 Dispatch</span>
+            </a>
+            <div class="user-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" 
+                     alt="User Profile" 
+                     onerror="this.src='https://placehold.co/100x100/e2e8f0/475569?text=User'">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Layout -->
+    <main class="container">
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="feature-badge">
+                <i class="fa-solid fa-shield-check" style="color: #64748b;"></i>
+                FAST • NEARBY • HUMAN
+            </div>
+            <div class="location-badge">
+                <i class="fa-regular fa-compass" style="font-size: 14px;"></i>
+                <span>Metro Hub 0.8 km</span>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="relay-tag">
+                <span class="green-dot"></span>
+                <span>14 Relays Active Now</span>
+            </div>
+            <div>
+                <h1 class="hero-title">Someone needs blood.<br>You can help.</h1>
+                <p class="hero-subtitle">Find a verified nearby blood donor in minutes.</p>
+            </div>
+        </section>
+
+        <!-- Blood Type Selection Section -->
+        <section class="blood-section">
+            <div class="section-header">
+                <span class="section-title">Select Needed Type (Optional)</span>
+                <a href="#" class="section-link">All Compatible</a>
+            </div>
+
+            <div class="blood-grid">
+                <!-- O- -->
+                <label class="blood-option">
+                    <input type="radio" name="bloodType" checked>
+                    <div class="blood-card">
+                        <div class="blood-type">O-</div>
+                        <div class="blood-label highlight">Universal</div>
+                    </div>
+                </label>
+
+                <!-- O+ -->
+                <label class="blood-option">
+                    <input type="radio" name="bloodType">
+                    <div class="blood-card">
+                        <div class="blood-type">O+</div>
+                        <div class="blood-label">High Demand</div>
+                    </div>
+                </label>
+
+                <!-- A+ -->
+                <label class="blood-option">
+                    <input type="radio" name="bloodType">
+                    <div class="blood-card">
+                        <div class="blood-type">A+</div>
+                        <div class="blood-label">Common</div>
+                    </div>
+                </label>
+
+                <!-- B+ -->
+                <label class="blood-option">
+                    <input type="radio" name="bloodType">
+                    <div class="blood-card">
+                        <div class="blood-type">B+</div>
+                        <div class="blood-label">Ready</div>
+                    </div>
+                </label>
+            </div>
+        </section>
+  
+        <!-- Primary Action Button -->
+        <div>
+            <a href="#" class="btn-primary">
+                <div class="btn-icon-circle">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <span>I Need Blood</span>
+                <i class="fa-solid fa-arrow-right" style="font-size: 18px;"></i>
+            </a>
+        </div>
+
+        <!-- Secondary Action Card -->
+        <div class="card-action">
+            <div class="card-action-left">
+                <div class="icon-box-red">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+                <span class="card-action-title">I Can Donate</span>
+            </div>
+            <a href="#" class="card-action-link">
+                <span>Join Standby</span>
+                <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
+            </a>
+            <div class="notification-badge">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+
+        <!-- Verified Donors Banner -->
+        <div class="info-banner">
+            <div class="shield-icon">
+                <i class="fa-solid fa-shield"></i>
+            </div>
+            <div>
+                <h2 class="info-title">1,420+ Verified Donors</h2>
+                <p class="info-description">On active standby across 18 regional hospitals & trauma care centers.</p>
+            </div>
+        </div>
+
+        <!-- Metrics Grid -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <i class="fa-regular fa-stopwatch metric-icon green"></i>
+                <div>
+                    <div class="metric-label">Average Response</div>
+                    <div class="metric-value">4.2 Minutes</div>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <i class="fa-solid fa-shield-halved metric-icon red"></i>
+                <div>
+                    <div class="metric-label">Identity & Screening</div>
+                    <div class="metric-value">100% Verified</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="footer-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-dharmachakra"></i>
+                <span>Requests</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-user-gear"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+    </nav>
+
+</body>
+</html>
