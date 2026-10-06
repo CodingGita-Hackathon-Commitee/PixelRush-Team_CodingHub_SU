@@ -1,0 +1,557 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #F8F9FD;
+      color: #1A1D20;
+      padding-bottom: 40px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 16px;
+      width: 100%;
+      flex: 1;
+    }
+
+    /* Header */
+    .header {
+      background-color: #F8F9FD;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-btn {
+      font-size: 20px;
+      text-decoration: none;
+      color: #1A1D20;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .page-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1A1D20;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .location-pill {
+      background-color: #EFF2FE;
+      color: #4B5563;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .user-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-color: #DBEAFE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      overflow: hidden;
+    }
+
+    /* Main Card Layout */
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      position: relative;
+    }
+
+    /* Top ETA Status Banner Card */
+    .status-card {
+      border-top: 4px solid #10B981;
+    }
+
+    .status-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .dispatched-badge {
+      background-color: #D1FAE5;
+      color: #065F46;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #005223;
+      border-radius: 50%;
+    }
+
+    .blood-units-box {
+      background-color: #FEE2E2;
+      color: #C61A1A;
+      border-radius: 10px;
+      padding: 6px 12px;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    .blood-type {
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .units-text {
+      font-size: 8px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-donor-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #1A1D20;
+      margin-bottom: 4px;
+    }
+
+    .eta-text {
+      font-size: 13px;
+      color: #6B7280;
+      margin-bottom: 16px;
+    }
+
+    .eta-text strong {
+      color: #1A1D20;
+      font-weight: 800;
+    }
+
+    /* Destination Strip */
+    .destination-strip {
+      background-color: #F3F4F6;
+      border-radius: 12px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .destination-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hospital-icon-box {
+      width: 32px;
+      height: 32px;
+      background-color: #FEE2E2;
+      color: #C61A1A;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .dest-label {
+      font-size: 10px;
+      color: #6B7280;
+      font-weight: 600;
+    }
+
+    .hospital-name {
+      font-size: 14px;
+      font-weight: 800;
+      color: #1A1D20;
+    }
+
+    .hospital-location {
+      font-size: 11px;
+      color: #6B7280;
+    }
+
+    .timer-pill {
+      background-color: #FEF3C7;
+      color: #92400E;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    /* Relay Timeline Section */
+    .timeline-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .timeline-heading {
+      font-size: 16px;
+      font-weight: 800;
+      color: #1A1D20;
+    }
+
+    .step-count {
+      font-size: 11px;
+      font-weight: 700;
+      color: #6B7280;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .timeline-item {
+      display: flex;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    /* Vertical line connecting nodes */
+    .timeline-item:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      left: 13px;
+      top: 26px;
+      bottom: 0;
+      width: 2px;
+      background-color: #E5E7EB;
+    }
+
+    .timeline-item.completed:not(:last-child)::before {
+      background-color: #005223;
+    }
+
+    .timeline-node {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      flex-shrink: 0;
+      margin-right: 14px;
+      z-index: 2;
+    }
+
+    .timeline-node.done {
+      background-color: #005223;
+      color: white;
+    }
+
+    .timeline-node.active {
+      background-color: #DC2626;
+      color: white;
+    }
+
+    .timeline-node.pending {
+      background-color: #E5E7EB;
+      color: #9CA3AF;
+    }
+
+    .timeline-content {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .step-main-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #1A1D20;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .step-desc {
+      font-size: 12px;
+      color: #6B7280;
+      margin-top: 2px;
+    }
+
+    .eta-badge-green {
+      background-color: #D1FAE5;
+      color: #065F46;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    .step-status-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: #6B7280;
+    }
+
+    .step-status-tag.live {
+      color: #DC2626;
+      font-weight: 800;
+    }
+
+    .step-status-tag.pending-text {
+      color: #9CA3AF;
+    }
+
+    /* Confirmed Responder Profile Card */
+    .responder-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .responder-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: #6B7280;
+      letter-spacing: 0.5px;
+    }
+
+    .verified-id-pill {
+      background-color: #D1FAE5;
+      color: #065F46;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .responder-profile {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .profile-avatar-container {
+      position: relative;
+    }
+
+    .profile-avatar {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background-color: #DBEAFE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      overflow: hidden;
+    }
+
+    .shield-badge {
+      position: absolute;
+      bottom: -2px;
+      right: -2px;
+      width: 18px;
+      height: 18px;
+      background-color: #005223;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      border: 2px solid white;
+    }
+
+    .profile-details {
+      flex: 1;
+    }
+
+    .profile-name-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .responder-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1A1D20;
+    }
+
+    .gold-donor-badge {
+      background-color: #FEF3C7;
+      color: #B45309;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    .donations-count {
+      font-size: 12px;
+      color: #6B7280;
+      margin-top: 2px;
+      margin-bottom: 6px;
+    }
+
+    .tags-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .blood-type-tag {
+      background-color: #EFF2FE;
+      color: #1E3A8A;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 6px;
+      line-height: 1.2;
+    }
+
+    .last-donated-text {
+      font-size: 10px;
+      color: #6B7280;
+      font-weight: 600;
+    }
+
+    /* Action Buttons Area */
+    .action-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .call-btn {
+      background-color: #111827;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .backup-btn {
+      background-color: #EEF2FF;
+      color: #131B2E;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .token-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+    }
+
+    .token-text {
+      color: #6B7280;
+    }
+
+    .cancel-link {
+      color: #DC2626;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    /* Red Cross Footer Banner */
+    .footer-red-cross {
+      background-color: #EFF2FE;
+      border-radius: 12px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      color: #4B5563;
+      line-height: 1.4;
+    }
+
+    .red-cross-icon {
+      color: #005223;
+      flex-shrink: 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .action-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-donor-title {
+        font-size: 18px;
+      }
+      .responder-name {
+        font-size: 16px;
+      }
+    }
