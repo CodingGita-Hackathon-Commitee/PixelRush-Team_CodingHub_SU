@@ -106,7 +106,7 @@ input {
     border: none;
     border-radius: 12px;
     background-color: #cf5656;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 17px;
 }
 
@@ -144,7 +144,7 @@ input {
 /* Sign Up */
 
 .login a {
-    color: #b84e4e;
+    color: #050505;
     text-decoration: none;
 }
 
